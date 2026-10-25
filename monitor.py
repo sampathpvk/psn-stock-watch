@@ -421,7 +421,7 @@ def notify(title: str, message: str, priority: int = 3, tags=None, click=None, a
     if not topic:
         log("  ! NTFY_TOPIC is not set; cannot send notifications")
         return False
-    server = os.environ.get("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
+    server = (os.environ.get("NTFY_SERVER", "").strip() or "https://ntfy.sh").rstrip("/")
     body = {"topic": topic, "title": title, "message": message, "priority": priority, "tags": tags or []}
     if click:
         body["click"] = click
