@@ -7,20 +7,35 @@
     "notify_when_gone": false
   },
   "items": [
-    {"id": "amazon-1000",  "store": "amazon",       "face_value": 1000, "url": "PASTE_AMAZON_URL_FOR_1000"},
-    {"id": "amazon-2000",  "store": "amazon",       "face_value": 2000, "url": "PASTE_AMAZON_URL_FOR_2000"},
-    {"id": "amazon-3000",  "store": "amazon",       "face_value": 3000, "url": "PASTE_AMAZON_URL_FOR_3000"},
-
-    {"id": "flipkart-1000", "store": "flipkart",    "face_value": 1000, "url": "PASTE_FLIPKART_URL_FOR_1000"},
-    {"id": "flipkart-2000", "store": "flipkart",    "face_value": 2000, "url": "PASTE_FLIPKART_URL_FOR_2000"},
-    {"id": "flipkart-3000", "store": "flipkart",    "face_value": 3000, "url": "PASTE_FLIPKART_URL_FOR_3000"},
-
-    {"id": "jiogames-1000", "store": "jiogames",    "face_value": 1000, "url": "PASTE_JIOGAMES_URL_FOR_1000"},
-    {"id": "jiogames-2000", "store": "jiogames",    "face_value": 2000, "url": "PASTE_JIOGAMES_URL_FOR_2000"},
-    {"id": "jiogames-3000", "store": "jiogames",    "face_value": 3000, "url": "PASTE_JIOGAMES_URL_FOR_3000"},
-
-    {"id": "gts-1000",      "store": "gamestheshop", "face_value": 1000, "url": "PASTE_GAMESTHESHOP_URL_FOR_1000"},
-    {"id": "gts-2000",      "store": "gamestheshop", "face_value": 2000, "url": "PASTE_GAMESTHESHOP_URL_FOR_2000"},
-    {"id": "gts-3000",      "store": "gamestheshop", "face_value": 3000, "url": "PASTE_GAMESTHESHOP_URL_FOR_3000"}
+    {
+      "id": "flipkart-gta6",
+      "store": "flipkart",
+      "face_value": 5999,
+      "url": "https://www.flipkart.com/ps5-grand-theft-auto-vi-standard/p/itm2357633f94688"
+    },
+    {
+      "id": "flipkart-5000",
+      "store": "flipkart",
+      "face_value": 5000,
+      "url": "https://www.flipkart.com/sony-interactive-entertainment-rs-5000-playstation-store-gift-card/p/itm5b2422845fb13"
+    },
+    {
+      "id": "flipkart-3000",
+      "store": "flipkart",
+      "face_value": 3000,
+      "url": "https://www.flipkart.com/sony-interactive-entertainment-europe-rs-3000-playstation-store-gift-card-digital-voucher-delivery-email/p/itma3cec289dd512"
+    },
+    {
+      "id": "amazon-3000",
+      "store": "amazon",
+      "face_value": 3000,
+      "url": "https://www.amazon.in/dp/B07K6RYVJ5"
+    },
+    {
+      "id": "amazon-5000",
+      "store": "amazon",
+      "face_value": 5000,
+      "url": "https://www.amazon.in/dp/B07K6PVR8B"
+    }
   ]
 }
