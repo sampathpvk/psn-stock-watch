@@ -1,0 +1,26 @@
+{
+  "_help": "Paste one product-page URL per card per store, set face_value to the card's rupee value, delete rows you don't need. Rows whose url still starts with PASTE are skipped. See README.md.",
+  "settings": {
+    "realert_hours": 6,
+    "heartbeat_hours": 24,
+    "blocked_alert_minutes": 90,
+    "notify_when_gone": false
+  },
+  "items": [
+    {"id": "amazon-1000",  "store": "amazon",       "face_value": 1000, "url": "PASTE_AMAZON_URL_FOR_1000"},
+    {"id": "amazon-2000",  "store": "amazon",       "face_value": 2000, "url": "PASTE_AMAZON_URL_FOR_2000"},
+    {"id": "amazon-3000",  "store": "amazon",       "face_value": 3000, "url": "PASTE_AMAZON_URL_FOR_3000"},
+
+    {"id": "flipkart-1000", "store": "flipkart",    "face_value": 1000, "url": "PASTE_FLIPKART_URL_FOR_1000"},
+    {"id": "flipkart-2000", "store": "flipkart",    "face_value": 2000, "url": "PASTE_FLIPKART_URL_FOR_2000"},
+    {"id": "flipkart-3000", "store": "flipkart",    "face_value": 3000, "url": "PASTE_FLIPKART_URL_FOR_3000"},
+
+    {"id": "jiogames-1000", "store": "jiogames",    "face_value": 1000, "url": "PASTE_JIOGAMES_URL_FOR_1000"},
+    {"id": "jiogames-2000", "store": "jiogames",    "face_value": 2000, "url": "PASTE_JIOGAMES_URL_FOR_2000"},
+    {"id": "jiogames-3000", "store": "jiogames",    "face_value": 3000, "url": "PASTE_JIOGAMES_URL_FOR_3000"},
+
+    {"id": "gts-1000",      "store": "gamestheshop", "face_value": 1000, "url": "PASTE_GAMESTHESHOP_URL_FOR_1000"},
+    {"id": "gts-2000",      "store": "gamestheshop", "face_value": 2000, "url": "PASTE_GAMESTHESHOP_URL_FOR_2000"},
+    {"id": "gts-3000",      "store": "gamestheshop", "face_value": 3000, "url": "PASTE_GAMESTHESHOP_URL_FOR_3000"}
+  ]
+}

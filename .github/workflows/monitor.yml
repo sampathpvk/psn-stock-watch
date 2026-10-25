@@ -1,0 +1,63 @@
+name: PSN stock monitor
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # GitHub's minimum; runs are best-effort and can be delayed
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Dry run: print what each page parsed to (no alerts, no state changes)"
+        type: boolean
+        default: false
+      test_notify:
+        description: "Send one test push notification and stop"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # lets the job commit state.json
+
+concurrency:
+  group: psn-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run monitor
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          NTFY_SERVER: ${{ vars.NTFY_SERVER }}
+          DEBUG_RUN: ${{ inputs.debug }}
+          TEST_NOTIFY: ${{ inputs.test_notify }}
+        run: |
+          ARGS=""
+          if [ "$DEBUG_RUN" = "true" ]; then ARGS="$ARGS --debug"; fi
+          if [ "$TEST_NOTIFY" = "true" ]; then ARGS="$ARGS --test-notify"; fi
+          python monitor.py $ARGS
+
+      - name: Save state
+        if: ${{ inputs.debug != true && inputs.test_notify != true }}
+        run: |
+          if [ -n "$(git status --porcelain state.json)" ]; then
+            git config user.name "psn-monitor"
+            git config user.email "psn-monitor@users.noreply.github.com"
+            git add state.json
+            git commit -m "Update monitor state"
+            for i in 1 2 3; do
+              git pull --rebase origin "$GITHUB_REF_NAME" && git push && break
+              sleep 5
+            done
+          fi
