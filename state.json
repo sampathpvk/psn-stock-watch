@@ -1,9 +1,9 @@
 {
   "_meta": {
     "health_alert": {
-      "amazon": 1792959134
+      "amazon": 1793051340
     },
-    "last_heartbeat": 1792950737
+    "last_heartbeat": 1793051340
   },
   "amazon-3000": {
     "fail_since": 1792950737
