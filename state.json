@@ -9,7 +9,7 @@
     "fail_since": 1792950737
   },
   "amazon-5000": {
-    "fail_since": 1792950737
+    "deal": false
   },
   "flipkart-3000": {
     "deal": false
