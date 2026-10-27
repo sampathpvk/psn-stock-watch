@@ -10,10 +10,11 @@
   },
   "amazon-5000": {
     "deal": false,
+    "fail_since": 1793123709,
     "last_alert": 1793081011
   },
   "flipkart-3000": {
-    "deal": true,
+    "deal": false,
     "last_alert": 1793102514
   },
   "flipkart-5000": {
