@@ -9,16 +9,18 @@
     "fail_since": 1792950737
   },
   "amazon-5000": {
-    "deal": true,
+    "deal": false,
     "last_alert": 1793081011
   },
   "flipkart-3000": {
-    "deal": false
+    "deal": true,
+    "last_alert": 1793102514
   },
   "flipkart-5000": {
     "deal": false
   },
   "flipkart-gta6": {
-    "deal": false
+    "deal": true,
+    "last_alert": 1793102514
   }
 }
