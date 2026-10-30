@@ -6,11 +6,10 @@
     "last_heartbeat": 1793319419
   },
   "amazon-3000": {
-    "fail_since": 1792950737
+    "deal": false
   },
   "amazon-5000": {
     "deal": false,
-    "fail_since": 1793168576,
     "last_alert": 1793081011
   },
   "flipkart-3000": {
@@ -22,6 +21,6 @@
   },
   "flipkart-gta6": {
     "deal": true,
-    "last_alert": 1793364160
+    "last_alert": 1793399317
   }
 }
