@@ -1,12 +1,13 @@
 {
   "_meta": {
     "health_alert": {
-      "amazon": 1793644582
+      "amazon": 1793742210
     },
     "last_heartbeat": 1793721917
   },
   "amazon-3000": {
-    "deal": false
+    "deal": false,
+    "fail_since": 1793742210
   },
   "amazon-5000": {
     "deal": false,
