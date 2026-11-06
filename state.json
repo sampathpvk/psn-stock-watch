@@ -6,8 +6,7 @@
     "last_heartbeat": 1793986545
   },
   "amazon-3000": {
-    "deal": false,
-    "fail_since": 1793986545
+    "deal": false
   },
   "amazon-5000": {
     "deal": false,
