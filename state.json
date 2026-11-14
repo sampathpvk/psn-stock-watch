@@ -3,7 +3,7 @@
     "health_alert": {
       "amazon": 1794567244
     },
-    "last_heartbeat": 1794539263
+    "last_heartbeat": 1794627480
   },
   "amazon-3000": {
     "deal": false,
@@ -23,6 +23,6 @@
   },
   "flipkart-gta6": {
     "deal": true,
-    "last_alert": 1794594101
+    "last_alert": 1794627480
   }
 }
