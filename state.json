@@ -15,16 +15,13 @@
   },
   "flipkart-3000": {
     "deal": false,
-    "fail_since": 1795195162,
     "last_alert": 1793102514
   },
   "flipkart-5000": {
-    "deal": false,
-    "fail_since": 1795195162
+    "deal": false
   },
   "flipkart-gta6": {
     "deal": false,
-    "fail_since": 1795195162,
     "last_alert": 1795056361
   }
 }
