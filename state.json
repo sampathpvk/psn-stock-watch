@@ -4,13 +4,15 @@
       "amazon": 1795164074,
       "flipkart": 1795037584
     },
-    "last_heartbeat": 1795137472
+    "last_heartbeat": 1795233589
   },
   "amazon-3000": {
-    "deal": false
+    "deal": false,
+    "fail_since": 1795233589
   },
   "amazon-5000": {
     "deal": false,
+    "fail_since": 1795233589,
     "last_alert": 1793081011
   },
   "flipkart-3000": {
