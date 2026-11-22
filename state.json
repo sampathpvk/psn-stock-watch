@@ -2,9 +2,9 @@
   "_meta": {
     "health_alert": {
       "amazon": 1795305413,
-      "flipkart": 1795037584
+      "flipkart": 1795326826
     },
-    "last_heartbeat": 1795233589
+    "last_heartbeat": 1795326826
   },
   "amazon-3000": {
     "deal": false,
