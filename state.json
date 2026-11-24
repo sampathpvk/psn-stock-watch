@@ -2,17 +2,15 @@
   "_meta": {
     "health_alert": {
       "amazon": 1795468286,
-      "flipkart": 1795326826
+      "flipkart": 1795497611
     },
     "last_heartbeat": 1795424318
   },
   "amazon-3000": {
-    "deal": false,
-    "fail_since": 1795424318
+    "deal": false
   },
   "amazon-5000": {
     "deal": false,
-    "fail_since": 1795468286,
     "last_alert": 1793081011
   },
   "flipkart-3000": {
