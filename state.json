@@ -7,10 +7,12 @@
     "last_heartbeat": 1795810430
   },
   "amazon-3000": {
-    "deal": false
+    "deal": false,
+    "fail_since": 1795863355
   },
   "amazon-5000": {
     "deal": false,
+    "fail_since": 1795863355,
     "last_alert": 1795597556
   },
   "flipkart-3000": {
